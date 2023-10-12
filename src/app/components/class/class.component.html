@@ -14,9 +14,15 @@
 </nav>
 
 <div class="col-md-12 p-2">
-    <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal">
-        <i class="fa fa-save"></i> New Class
-    </button>
+    <div class="button-container">
+        <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <i class="fa-regular fa-floppy-disk"></i> New Class
+        </button>
+        &nbsp;
+        <button type="button" class="btn btn-secondary btn-sm" (click)="navigateToNewPage()">
+            <i class="fa-solid fa-chart-bar"></i> View Chart
+        </button>
+    </div>
     <table class="table mt-2 table-bordered">
         <thead class="table-primary">
             <tr>
@@ -36,11 +42,11 @@
                 <td>
                     <button type="button" class="btn btn-warning btn-sm" data-bs-toggle="modal"
                         data-bs-target="#exampleModal">
-                        <i class="fa fa-pencil"></i>
+                        <i class="fa-solid fa-pencil"></i>
                     </button>
                     &nbsp;
                     <button type="button" class="btn btn-danger btn-sm">
-                        <i class="fa fa-trash"></i>
+                        <i class="fa-solid fa-trash"></i>
                     </button>
                 </td>
             </tr>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from "@angular/router";
 
 @Component({
   selector: 'app-class',
@@ -11,7 +12,7 @@ export class ClassComponent implements OnInit{
 
   isUpdate: boolean = false;
 
-  constructor() {}
+  constructor(private router: Router) {}
 
   ngOnInit(): void {}
 
@@ -21,5 +22,9 @@ export class ClassComponent implements OnInit{
 
   selectItem(item: any){
     this.isUpdate = true;
+  }
+
+  navigateToNewPage() {
+    this.router.navigate(['/chart']);
   }
 }
