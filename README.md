@@ -1,6 +1,6 @@
 # CreateAngularApp
 
-You should use Node.Js 18.18.0 to run this project.
+This project has been deployed to [https://create-angular-app.vercel.app](https://create-angular-app.vercel.app). You should use Node.Js 18.18.0 to run this project.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.1.
 
